@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5"
+         xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" >
+
+	<!-- QQ登陆 -->
+    <servlet>
+        <servlet-name>login</servlet-name>
+        <servlet-class>com.qq.connect.demo.IndexServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>login</servlet-name>
+        <!-- 业界标准 用.do后缀来表示 controler -->
+        <url-pattern>/login.do</url-pattern>
+    </servlet-mapping>
+<!-- QQ登陆结果的回调-->	
+    <servlet>
+        <servlet-name>afterlogin</servlet-name>
+        <servlet-class>com.qq.connect.demo.AfterLoginRedirectServlet</servlet-class>
+    </servlet>
+	
+    <servlet-mapping>
+        <servlet-name>afterlogin</servlet-name>
+        <!-- 业界标准 用.do后缀来表示 controler -->
+        <url-pattern>/afterlogin.do</url-pattern>
+    </servlet-mapping>
+
+	<!-- 发表说说 -->
+    <servlet>
+        <servlet-name>shuoshuo</servlet-name>
+        <servlet-class>com.qq.connect.demo.ShuoShuoServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>shuoshuo</servlet-name>
+        <url-pattern>/shuoshuo.do</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>pcServlet</servlet-name>
+        <servlet-class>com.qq.connect.demo.PcServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>pcServlet</servlet-name>
+        <url-pattern>/pcServlet.do</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>weiboServlet</servlet-name>
+        <servlet-class>com.david.weibo.WeiboServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>weiboServlet</servlet-name>
+        <url-pattern>/weiboServlet.do</url-pattern>
+    </servlet-mapping>
+
+</web-app>
