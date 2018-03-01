@@ -58,5 +58,14 @@
         <servlet-name>weiboServlet</servlet-name>
         <url-pattern>/weiboServlet.do</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>wechatServlet</servlet-name>
+        <servlet-class>com.david.wechat.WechatServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>wechatServlet</servlet-name>
+        <url-pattern>/wechatServlet.do</url-pattern>
+    </servlet-mapping>
 
 </web-app>
