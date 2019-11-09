@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+*.log
+.settings
+.classpath
+.project
+target
+# idea ignore
+.idea/
+*.ipr
+*.iml
+*.iws
