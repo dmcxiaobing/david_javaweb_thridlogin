@@ -9,13 +9,13 @@
 	6，备注：由于没有微信账号，所以微信登录我没有测试，由于做法都差不多，所以如有问题，请自行仔细排查。
 	
 ### 项目结构介绍以及使用注意事项
-![项目架构](http://otq6q76t6.bkt.clouddn.com/github1.jpg)
+![项目架构](https://mcxiaobing.gitee.io/blog/img/github/david_javaweb_thridlogin/1.png)
 
 	1，可以看出应该很明确，微博登录类是：WeiboServlet,QQ是IndexServlet和PcServlet。微信是WeChatServlet
 	2，由于里面代码很详细，具体我就不在陈述了，请参考里面的代码。里面注释和官方请求参数地址写的很清楚。
 	3，注意：如果使用微博和QQ的sdk中Oauth登陆，记得修改config.properties和qqconnectconfig.properties中的文件。
 ### 最后再给大家贴一个微博登录的实现代码。
-![微博登录的实现代码](http://otq6q76t6.bkt.clouddn.com/github2.jpg)
+![微博登录的实现代码](https://mcxiaobing.gitee.io/blog/img/github/david_javaweb_thridlogin/2.png)
 
 ### 所以每个类写的都是很详细的。当然如果你有疑问，可以联系我。谢谢。
 
